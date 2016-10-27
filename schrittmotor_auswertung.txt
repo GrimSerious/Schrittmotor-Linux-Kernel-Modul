@@ -1,0 +1,22 @@
+# mknod /dev/schrittm c 60 0
+
+# insmod schrittm.ko
+# echo "v" > /dev/schrittm 
+# echo "v" > /dev/schrittm 
+# echo "v" > /dev/schrittm 
+# echo "v" > /dev/schrittm 
+# echo "f" > /dev/schrittm 
+# rmmod schrittm
+
+
+tail -f /var/log/messages
+Apr 14 19:50:57 linux-b5d0 kernel: [  287.719715] Installing schrittm module
+Apr 14 19:50:57 linux-b5d0 kernel: [  287.719722] schrittm: got major 60
+Apr 14 19:50:57 linux-b5d0 kernel: [  287.719727] schrittm module installed
+Apr 14 19:51:16 linux-b5d0 kernel: [  306.361758] step:9 richtung:0 mode:0
+Apr 14 19:51:18 linux-b5d0 kernel: [  308.482324] step:5 richtung:0 mode:0
+Apr 14 19:51:19 linux-b5d0 kernel: [  309.394344] step:6 richtung:0 mode:0
+Apr 14 19:51:20 linux-b5d0 kernel: [  309.991417] step:10 richtung:0 mode:0
+Apr 14 19:52:26 linux-b5d0 kernel: [  375.625651] Full-Step mode initialized
+Apr 14 19:52:34 linux-b5d0 kernel: [  384.067487] Deinstalling schrittm module
+
